@@ -183,6 +183,7 @@ body{
 	.header{
 		display:block;
 		background:#151719;
+                position:fixed;
 	}
 	.header ul li{
 		display:inline-block;
