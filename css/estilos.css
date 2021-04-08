@@ -1,0 +1,202 @@
+*{
+	padding:0;
+	margin:0;
+	font-size:10px;
+}
+
+body{
+	height:100%;
+	box-sizing:content-box;
+	
+}
+
+.header{
+	display:none;
+}
+.sidebar{
+	position:fixed;
+	width:35em;
+	background:#151719;
+	height:100%;
+	left:-35em;
+	transition:all 500ms linear;
+}
+
+.sidebar img{
+	height:8em;
+	padding-bottom:5em;
+	border-radius:50%;
+}
+.active{
+	left:0;
+}
+.sidebar ul li{
+
+	display:block;
+	color:white;
+	text-align:center;
+	font-family:Arial;
+	font-size:3em;
+	padding:.8em 1em;
+	border-bottom:.1em solid white;
+	list-style:none;
+
+}
+
+.boton span{
+	display:block;
+	position:absolute;
+	color:white;
+	left:13em;
+	width:1em;
+	font-size:3em;
+	border:0.04em solid white;
+	text-align:center;
+
+}
+
+.fondo{
+
+	min-width:100%;
+	min-height:60em;
+	background:url(../imagenes/hearStone.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:scroll;
+}
+
+.fondo h1{
+	text-align:center;
+	font-size:8em;
+	padding-top:3em;
+	color:blue;
+}
+
+.acercaDe{
+	width:90%;
+	margin:auto;
+}
+
+.acercaDe h1{
+	font-size:3em;
+	text-align:center;
+	padding-top:1.5em;
+
+}
+
+.acercaDe p{
+	font-size:2em;
+	padding-top:1.5em;
+	border-top:0.05em solid black;
+}
+.fondo__active{
+	left:35em;
+}
+.contenedor__active{
+
+	position:relative;
+	left:38em;
+
+}
+
+.nuestroTrabajo{
+	width:90%;
+	margin:auto;
+	padding-top:6em;
+}
+
+.nuestroTrabajo h2{
+	text-align:center;
+	font-size:3em;
+}
+
+.nuestroTrabajo ul{
+	padding-top:3em;
+	border-top:0.05em solid black;
+
+}
+
+.nuestroTrabajo ul > li{
+	display:block;
+	font-size:2em;
+
+}
+
+.galeria{
+	padding-top:15em;
+	display:grid;
+	grid-template-columns:repeat(2, 0.5fr);
+	grid-template-rows:repeat(2, 0.5fr);
+	grid-template-areas:"imagen1 imagen2"
+						"imagen3 imagen3";
+	grid-gap:10em;
+}
+.galeria img{
+	height:20em;
+	
+}
+.galeria .imagen1{
+	grid-area:imagen1;
+	display:flex;
+	justify-content:center;
+}
+
+.galeria .imagen2{
+	grid-area:imagen2;
+	display:flex;
+	justify-content:center;
+}
+
+.galeria .imagen3{
+	grid-area:imagen3;
+	display:flex;
+	justify-content:center;
+}
+
+
+.footer{
+	background:black;
+	margin-top:10em;
+}
+
+.footer ul li{
+
+	display:inline-block;
+	color:white;
+	font-size:2em;
+	padding-left:5em;
+	line-height:3em;
+}
+
+.footer a{
+	font-size:1em;
+	color:white;
+	text-decoration:none;
+}
+
+
+
+@media screen and (min-width: 1080px ){
+	.sidebar{
+		display:none;
+	}
+	.header{
+		display:block;
+		background:#151719;
+	}
+	.header ul li{
+		display:inline-block;
+		color:white;
+		font-size:2.5em;
+		line-height:3em;
+		padding-left:6em;
+		transition:all 500ms ease;
+	}
+
+	.header ul li:hover{
+		padding-right:6em;
+		background:orange;
+	}
+}
+
+
